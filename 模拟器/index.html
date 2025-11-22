@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>逆水寒塔防阵容预览</title>
+    <link rel="stylesheet" href="style.css">
+	<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "u90azur1a8");
+	</script>
+
+
+
+</head>
+<body>
+
+
+    <div id="synergy-tooltip"></div>
+	<div id="piece-tooltip"></div>
+    <div id="message-box"></div>
+
+    <div id="page-wrapper">
+        <div id="app-container">
+            
+ <div id="left-panel">
+
+                <h2>棋子列表</h2>
+                <div class="tab-list">
+                    <button class="tab-btn active" data-quality="金">金 (10)</button>
+                    <button class="tab-btn" data-quality="紫">紫 (20)</button>
+                    <button class="tab-btn" data-quality="蓝">蓝 (18)</button>
+                    <button class="tab-btn" data-quality="filter" style="color: #495057; border-color: #adb5bd;">🔍 筛选</button>
+                </div>
+
+                <div id="filter-options" class="filter-container" style="display: none;"></div>
+        
+                <div id="piece-list-container">
+                    <div id="piece-list"></div>
+                </div>
+                
+               <div id="footer-credits-wrapper"> 
+                    
+                    <div class="credits-section">
+                        <div class="credits-title">❤️ 特别鸣谢 (建议/测试)</div>
+                         <div class="credits-avatars">
+                             
+                             <a href="https://www.douyin.com/user/MS4wLjABAAAAeLI0UAGd-ns_82T1E0pvRzh62ps46y3cQIdQr6qOl_c" target="_blank" class="avatar-link" target="_blank" class="avatar-link" title="点击访问">
+                                 <img src="https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-avt-0015_2714e397fc1dca6ef52245bddd600f2f~c5_300x300.jpeg?from=2956013662" alt="主播名" onerror="this.style.display='none'">
+                                 <span class="credit-name">小白</span>
+                             </a>
+
+                             <a href="https://www.douyin.com/user/MS4wLjABAAAASFvuX8dXS_qrNJspr_ciJiX-1kXalWUv64xXMzXoWTo" target="_blank" class="avatar-link" title="点击访问">
+                                 <img src="https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813c001_b6b30ca91b1340908ac1bd13ab8e85c8~c5_300x300.jpeg?from=2956013662" alt="主播名" onerror="this.style.display='none'">
+                                 <span class="credit-name">姐姐奶我</span>
+                             </a>
+
+                             <a href="#" class="avatar-link">
+                                 <div class="avatar-placeholder">+</div>
+                                 <span class="credit-name">虚位以待</span>
+                             </a>
+                         </div>
+                    </div>
+
+                    <div class="about-section">
+                        <div class="about-row">
+                            <span>🛠️ 作者:</span>
+                            <a href="https://space.bilibili.com/7946546?spm_id_from=333.1007.0.0" target="_blank" class="about-link">
+                                B站：噼啪噼啪响不停
+                            </a>
+                        </div>
+                        <div class="about-row sub-info">
+                            <span>参考: 【合作塔防模拟器】</span>
+                            <span class="divider">|</span>
+                            <span title="代码协助: ">🤖 Gemini3.0</span>
+                        </div>
+                    </div>
+
+                </div>
+				
+				
+				<div class="download-link-container">
+                    <a href="https://wwz.lanzoul.com/itabu3bocgcj" class="download-btn" target="_blank">
+                        🔗 网盘下载
+                    </a>
+                </div>
+
+            </div>
+
+            <div id="middle-panel">
+                <h2 style="display: flex; justify-content: space-between; align-items: center;">
+                    <span>棋盘 <span id="piece-count">(0/18)</span></span>
+                    
+                    <div id="clock-container" class="mini-clock">
+                        <div class="clock-time">00:00:00</div>
+                        <div class="clock-tips">加载中...</div>
+                    </div>
+                </h2>
+                
+                <div class="board-controls">
+                    <div class="board-controls-left">
+                        <div class="import-export">
+                            <input type="text" id="import-input" placeholder="粘贴布局代码">
+                            <button id="import-btn" title="导入布局">导入</button>
+                            <button id="export-btn" title="导出布局">导出</button>
+                        </div>
+                        <button id="toggle-bg-btn" title="切换背景">🎨 换背景</button>
+                    </div>
+                    <button id="clear-board-btn" title="清空棋盘">清空</button>
+                </div>
+                
+                <div class="board-hint">
+                    <strong>操作提示:</strong> 拖拽棋子上阵，右键下阵。<strong>便利贴</strong>可按住顶部拖动，拖动边缘可缩放。
+                </div>
+                
+               <div class="board-wrapper theme-green" id="chessboard">
+                   
+                   <div class="notes-wrapper collapsed" id="stickyNote">
+					<div class="resizer resizer-t"></div>
+					<div class="resizer resizer-r"></div>
+					<div class="resizer resizer-b"></div>
+					<div class="resizer resizer-l"></div>
+					<div class="resizer resizer-tl"></div>
+					<div class="resizer resizer-tr"></div>
+					<div class="resizer resizer-bl"></div>
+					<div class="resizer resizer-br"></div>
+
+					<div class="notes-drag-handle" id="notesHandle">
+						<span>📝 战术便签</span>
+						<button id="toggleNoteBtn" class="note-toggle-btn" title="展开/折叠">➕</button>
+					</div>
+
+					<div class="notes-toolbar">
+						<button class="note-tool-btn" onclick="formatDoc('bold')" title="加粗 (Ctrl+B)"><b>B</b></button>
+						<button class="note-tool-btn" onclick="formatDoc('fontSize', '5')" title="大字号">A+</button>
+						<div class="color-picker-wrapper" title="文字颜色">
+							<label for="fontColorPicker">🎨</label>
+							<input type="color" id="fontColorPicker" onchange="formatDoc('foreColor', this.value)" value="#ff0000">
+						</div>
+						<button class="note-tool-btn" onclick="formatDoc('removeFormat')" title="清除格式">🧹</button>
+					</div>
+					<div class="board-notes" contenteditable="true" placeholder="此处输入战术核心、装备推荐或注意事项...&#10;(点击上方按钮折叠)"></div>
+				</div>
+
+                   <div class="board-grid-container" id="boardGridContainer">
+                       </div>
+               </div>
+            </div>
+
+            <div id="right-panel">
+                <h2>羁绊效果</h2>
+                
+                <div class="tips-container">
+                    <div class="tip-item">
+                        <strong>① 一键补齐:</strong> 点击羁绊右侧 <strong>[+]</strong> 号。
+                    </div>
+                    <div class="tip-item">
+                        <strong>② 羁绊高亮:</strong> 鼠标悬停在羁绊上，高亮对应棋子。
+                    </div>
+                </div>
+
+                <ul id="synergy-list">
+                    </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
